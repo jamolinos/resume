@@ -1,0 +1,26 @@
+{
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pdflatex",
+      "tools": ["pdflatex"]
+    }
+  ],
+  "latex-workshop.latex.defaultRecipe": "pdflatex",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex",
+      "command": "/Library/TeX/texbin/pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "env": {
+        "PATH": "%PATH%:/Library/TeX/texbin:/usr/local/bin:/opt/homebrew/bin"
+      }
+    }
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.autoBuild.run": "onSave"
+}
